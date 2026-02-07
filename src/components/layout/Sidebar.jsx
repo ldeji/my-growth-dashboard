@@ -24,31 +24,31 @@ const Sidebar = () => {
         </div>
         
         <div>
-            <p className="bg-black flex justify-center items-center gap-1 rounded-lg text-sm text-white px-4 py-2">
+            <p className="bg-black flex justify-center items-center gap-1 hover:scale-105 transition-all duration-300 rounded-lg text-sm text-white px-4 py-2">
                 <RiDashboardFill className="text-base" />
                 Dashboard
             </p>
 
             <ul className='mt-4 flex flex-col gap-2 text-xs font-bold text-gray-900'>
-                <li className='flex flex-row justify-center items-center gap-2'><IoCalendarOutline />Calendar</li>
-                <li className='flex flex-row justify-center items-center gap-2'><GrTask />My tasks</li>
-                <li className='flex flex-row justify-center items-center gap-2'><FcStatistics />My Statics</li>
-                <li className='flex flex-row justify-center items-center gap-2'><IoDocumentTextOutline />Document</li>   
+                <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 items-center gap-2'><IoCalendarOutline />Calendar</li>
+                <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 items-center gap-2'><GrTask />My tasks</li>
+                <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 items-center gap-2'><FcStatistics />My Statics</li>
+                <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 items-center gap-2'><IoDocumentTextOutline />Document</li>   
             </ul>
         </div>
         
         <div className='flex flex-col gap-2'>
-            <p className='text-sm justify-start p-2 font-semibold'>INTEGRATION</p>
-            <li className='flex flex-row justify-center text-xs text-gray-900 font-bold gap-1'><RiSlackFill />My Slack</li>
-            <li className='flex flex-row justify-center text-xs text-gray-900 font-bold gap-1'><BsDiscord />Discord</li>
-            <li className='flex flex-row justify-center text-xs text-gray-900 font-bold gap-2'><BsPlugin />Plugin</li>
+            <p className='text-sm justify-start p-2 font-semibold hover:scale-110 transition-all duration-300'>INTEGRATION</p>
+            <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 text-xs text-gray-900 font-bold gap-1'><RiSlackFill />My Slack</li>
+            <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 text-xs text-gray-900 font-bold gap-1'><BsDiscord />Discord</li>
+            <li className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 text-xs text-gray-900 font-bold gap-2'><BsPlugin />Plugin</li>
         </div>
 
         <div className='flex flex-col gap-2'> 
-            <p className='flex flex-row justify-start p-2 text-sm font-semibold'>TEAMS</p>
-            <h3 className='flex flex-row justify-center text-xs text-gray-900 font-bold gap-2'><RiSeoLine />Seo-Op</h3>
-            <h3 className='flex flex-row justify-center text-xs text-gray-900 font-bold gap-2'><SiGooglemarketingplatform />Search</h3>
-            <h3 className='flex flex-row justify-center text-xs text-gray-900 font-bold gap-2'><CiSettings />Setting</h3>
+            <p className='flex flex-row justify-start p-2 text-sm font-semibold hover:scale-105 transition-all duration-300'>TEAMS</p>
+            <h3 className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 text-xs text-gray-900 font-bold gap-2'><RiSeoLine />Seo-Op</h3>
+            <h3 className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 text-xs text-gray-900 font-bold gap-2'><SiGooglemarketingplatform />Search</h3>
+            <h3 className='flex flex-row justify-center hover:scale-110 cursor-pointer transition-all duration-300 text-xs text-gray-900 font-bold gap-2'><CiSettings />Setting</h3>
         </div>
        </div>
        </>

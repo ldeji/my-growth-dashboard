@@ -33,10 +33,10 @@ const Main = () => {
         </div>
 
        <div className=" flex flex-row items-center md:flex-row justify-end gap-3 -mt-1.25 mr-38">
-          <button className='bg-black text-white rounded-full px-4 py-1 text-xs cursor-pointer hover:scale-105'>+ Create</button>
+          <button className='bg-black text-white md:rounded-full px-4 py-1 text-xs cursor-pointer hover:scale-105'>+ Create</button>
           <span className="bg-white rounded-full h-6 w-6 flex items-center justify-center hover:scale-105 hover:bg-gray-500 cursor-pointer"><IoIosSearch /></span>
           <span className="bg-white rounded-full h-6 w-6 flex items-center justify-center hover:scale-105 hover:bg-gray-500 cursor-pointer"><IoIosNotificationsOutline /></span>
-          <img src={LateefLogo} alt="image" className="flex justify-center items-center h-7 w-7 hover:scale-120 rounded-full overflow-hidden" />
+          <img src={LateefLogo} alt="image" className="justify-center h-5 r-5flex  md:justify-center items-center h-7 w-7 hover:scale-120 rounded-full overflow-hidden" />
        </div>
       </nav>
        
@@ -95,7 +95,7 @@ const Main = () => {
     
          <section className='Weekly Progress'> 
                <div className="rounded-xl border border-gray-100 w-60 h-45 mt-2">
-                   <img src={dash} alt="chart"  className="flex justify-center items-center h-45 w-60 overflow-hidden"/>
+                   <img src={dash} alt="chart"  className="flex justify-center items-center h-45 w-60 overflow-hidden hover:scale-105"/>
 
                </div>
          </section>
@@ -122,7 +122,7 @@ const Main = () => {
                                       </div>                    
                               </div>
                               
-                              <div  className="text-5xl">
+                              <div  className="text-5xl animate-[spin_3s_linear_infinite] transition-all duration-300">
                                   <span><SiCircle /></span>
                               </div>
 
@@ -172,9 +172,9 @@ const Main = () => {
                               <p className='font-bold text-sm p-2 opacity-90'>Boss Appointment</p>
                               <p className='flex flex-row justify-between p-2 text-[9px] opacity-70'>Next Meeting<MdNotificationsActive /></p>
                               < div className='absolute -top-7 -right-0.5 flex-row justify-center p-4 mt- bg-black text-white rounded-md hover:scale-115 cursor-pointer transition all duration-300 h-16 w-16'> 
-                                   <h3 className="flex flex-row justify-between items-center gap-2 text-[7px]">Add Note<MdNoteAdd /></h3>
-                                   <h3 className="flex flex-row justify-between items-center gap-2 text-[7px]">Edit<BsPen /></h3>
-                                   <h3 className="flex flex-row justify-between items-center gap-2 text-[7px]">Delte<MdDeleteForever /></h3>
+                                   <h3 className="flex flex-row justify-between items-center hover:scale-105 gap-2 text-[7px]">Add Note<MdNoteAdd /></h3>
+                                   <h3 className="flex flex-row justify-between items-center hover:scale-105 gap-2 text-[7px]">Edit<BsPen /></h3>
+                                   <h3 className="flex flex-row justify-between items-center hover:scale-105 gap-2 text-[7px]">Delte<MdDeleteForever /></h3>
                               </div>
       
                           </div>
