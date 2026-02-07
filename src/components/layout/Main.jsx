@@ -26,13 +26,13 @@ import dash from '../../assets/dashBoard.png'
 
 const Main = () => {
   return (
-    <div className=' h-133 w-170 p-1'>
-      <nav className='flex flex-row justify-between p-5'>
-        <div>
-          <p className="font-bold text-lg">Hi, User!</p>      
+    <div className="flex-1 p-4 rounded-3xl">
+      <nav>
+        <div className=' flex justify-start'>
+          <p className="md:relative -bottom-6 -right-38 font-bold text-lg">Hi, User!</p>      
         </div>
 
-       <div className="flex flex-row gap-4 items-center">
+       <div className=" flex flex-row items-center md:flex-row justify-end gap-3 -mt-1.25 mr-38">
           <button className='bg-black text-white rounded-full px-4 py-1 text-xs cursor-pointer hover:scale-105'>+ Create</button>
           <span className="bg-white rounded-full h-6 w-6 flex items-center justify-center hover:scale-105 hover:bg-gray-500 cursor-pointer"><IoIosSearch /></span>
           <span className="bg-white rounded-full h-6 w-6 flex items-center justify-center hover:scale-105 hover:bg-gray-500 cursor-pointer"><IoIosNotificationsOutline /></span>
@@ -41,7 +41,7 @@ const Main = () => {
       </nav>
        
              {/* Headline ---- First Row Cards */}
-     <section className="Headlines flex flex-row gap-4 justify-center">
+     <section className="Headlines md:flex flex-row gap-4 justify-center">
 
         <section className='Over All Information'>
              <div className="bg-black rounded-xl w-45 h-45 mt-2 p-4">
@@ -67,23 +67,23 @@ const Main = () => {
               <span className="flex flex-row text-white text-sm"><FaBarsProgress /><FaBarsProgress />
               <FaBarsProgress /><FaBarsProgress /><FaBarsProgress /><FaBarsProgress /><FaBarsProgress /><FaBarsProgress /></span>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-center font-bold mt-6">
+              <div className="grid grid-cols-3 gap-2 text-center font-bold mt-6">
                     {/* card 1 */}
-                    <div className="bg-orange-50 w-12 h-14 rounded-lg hover:scale-105 cursor-pointer transition all duration-300" >
+                    <div className="bg-white w-12 h-14 rounded-lg hover:scale-105 cursor-pointer transition all duration-300" >
                       <span className="flex flex-row justify-center mt-1"><RiProgress8Line /></span>
                       <h1 className="font-bold text-sm">32</h1>
                       <p className="text-[8px]">Projects</p>
                       </div>
 
                     {/* card 2 */}
-                    <div className="bg-orange-50 w-12 h-14 rounded-lg hover:scale-105 cursor-pointer transition all duration-300">
+                    <div className="bg-white w-12 h-14 rounded-lg hover:scale-105 cursor-pointer transition all duration-300">
                       <span className="flex flex-row justify-center mt-1"><FaSpinner /></span>
                       <h1 className="font-bold text-sm">2</h1>
                       <p className="text-[8px]">In progress</p>
                       </div>
 
                     {/* card 3*/}
-                      <div className='bg-orange-50 w-12 h-14 rounded-lg hover:scale-105 cursor-pointer transition all duration-300'>
+                      <div className='bg-white w-12 h-14 rounded-lg hover:scale-105 cursor-pointer transition all duration-300'>
                       <span className="flex flex-row justify-center mt-1"><MdOutlineOfflinePin /></span>
                       <h1 className="font-bold text-sm">25</h1>
                       <p className="text-[8px]">Complete</p>
@@ -141,7 +141,7 @@ const Main = () => {
       
 
         {/* Middle Cards  */}
-    <section className="flex flex-row gap-3 justify-center">
+    <section className="flex flex-col md:flex-row gap-3 justify-center">
              <div className="bg-white rounded-xl w-40 h-40 mt-2">
                   <div className='flex flex-col justify-center gap-4 mt-2'>
                        <div className='flex flex-row justify-center gap-2 mt-2'>
@@ -171,10 +171,10 @@ const Main = () => {
                               <span className='flex flex-row justify-between p-2'><FaUsersLine /><BsThreeDots /></span>
                               <p className='font-bold text-sm p-2 opacity-90'>Boss Appointment</p>
                               <p className='flex flex-row justify-between p-2 text-[9px] opacity-70'>Next Meeting<MdNotificationsActive /></p>
-                              < div className='absolute -top-7 -right-0.5 flex-row justify-center p-4 mt- bg-black text-white rounded-md hover:scale-105 cursor-pointer transition all duration-300 h-16 w-16'> 
-                                   <h3 className="flex flex-row justify-center items-center gap-2 text-[7px]">Add Note<MdNoteAdd /></h3>
-                                   <h3 className="flex flex-row justify-center items-center gap-2 text-[7px]">Edit<BsPen /></h3>
-                                   <h3 className="flex flex-row justify-center items-center gap-2 text-[7px]">Delte<MdDeleteForever /></h3>
+                              < div className='absolute -top-7 -right-0.5 flex-row justify-center p-4 mt- bg-black text-white rounded-md hover:scale-115 cursor-pointer transition all duration-300 h-16 w-16'> 
+                                   <h3 className="flex flex-row justify-between items-center gap-2 text-[7px]">Add Note<MdNoteAdd /></h3>
+                                   <h3 className="flex flex-row justify-between items-center gap-2 text-[7px]">Edit<BsPen /></h3>
+                                   <h3 className="flex flex-row justify-between items-center gap-2 text-[7px]">Delte<MdDeleteForever /></h3>
                               </div>
       
                           </div>
@@ -188,7 +188,7 @@ const Main = () => {
      
 
       {/* Footer Cards  */}
-        <p className='font-bold flex flex-row justify-start ml-6 mt-3'>Last Project's</p>
+        <p className='relative -right-33 font-bold flex flex-row justify-between ml-6 mt-3'>Last Project's</p>
       <section className="flex flex-row gap-4 justify-center mt-4">
              <div className="bg-black text-white rounded-xl w-50 h-18 hover:scale-105 cursor-pointer transition all duration-300">
                    
@@ -197,7 +197,7 @@ const Main = () => {
                                    <p className='text-sm font-semibold'>New Schedule</p>
                                   <span><RiProgress6Line /></span>  
                               </div>   
-                               <div className='flex flex-row gap-2 text-[9px] ml-2 mb-4'>
+                               <div className="hidden md:flex flex-row gap-2 text-[9px] ml-2 mb-4">
                                   <span>⚪</span> 
                                   <p>Buckle up guys, Big project coming up.</p>
                                </div>                                                                                                                                                 
@@ -210,7 +210,7 @@ const Main = () => {
                                  <p className='text-sm font-semibold'>Anime Ui Design</p>
                                  <span><MdOutlineOfflinePin /></span>
                             </div>
-                            <div className='flex flex-row gap-2 text-[9px] ml-2 mb-4'>
+                            <div className='hidden md:flex flex-row gap-2 text-[9px] ml-2 mb-4'>
                                  <span>⚪</span>
                                  <p>Completed</p>
                             </div>
@@ -223,7 +223,7 @@ const Main = () => {
                                  <p className='text-sm font-semibold'>Creative Ui Design</p>
                                  <span><MdOutlineOfflinePin /></span>
                             </div>
-                            <div className='flex flex-row gap-2 text-[9px] ml-2 mb-4'>
+                            <div className='hidden md:flex flex-row gap-2 text-[9px] ml-2 mb-4'>
                                  <span>⚪</span>
                                  <p>Completed</p>
                             </div>
@@ -235,7 +235,7 @@ const Main = () => {
       
           {/* chart  */}
       <section>
-              <div className="min-h- bg-gray-100 mt-4 p-6">
+              <div className="w-full h-80 md:h-96 mt-6">
                        <WeeklyAreaChart />
                    </div>
       </section>

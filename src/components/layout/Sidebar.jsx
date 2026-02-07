@@ -17,8 +17,8 @@ import reactLogo from '../../assets/react.svg'
 const Sidebar = () => {
     return (
        <>
-       <div className="bg-white p-1 rounded-3xl h-137 w-60 flex flex-col gap-4  ">
-        <div className='flex flex-row justify-center items-center gap-2 mt-4 mb-8'>
+       <div className="bg-white p-4 rounded-3xl flex flex-col gap-4 md:w-60 w-full">
+        <div className='flex flex-row justify-center items-center gap-2 mt-6 mb-8'>
             <img src={reactLogo} alt="logo" className="w-7 h-7" />
            <h1 className='text-lg font-bold'>Growth</h1> 
         </div>
@@ -32,7 +32,7 @@ const Sidebar = () => {
             <ul className='mt-4 flex flex-col gap-2 text-xs font-bold text-gray-900'>
                 <li className='flex flex-row justify-center items-center gap-2'><IoCalendarOutline />Calendar</li>
                 <li className='flex flex-row justify-center items-center gap-2'><GrTask />My tasks</li>
-                <li className='flex flex-row justify-center items-center gap-2'><FcStatistics />My Static's</li>
+                <li className='flex flex-row justify-center items-center gap-2'><FcStatistics />My Statics</li>
                 <li className='flex flex-row justify-center items-center gap-2'><IoDocumentTextOutline />Document</li>   
             </ul>
         </div>

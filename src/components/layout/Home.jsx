@@ -6,13 +6,15 @@ const Home = () => {
     return (
         <>
 
-        <div className="grid grid-col-1 md:grid-row-1 rounded-3xl w-250 h-150 mt-12 bg-gray-300 mx-auto">
-            <div className="flex flex-row gap-8 justify-center items-center p-6">
-                <Sidebar />
-                <Main /> 
-            </div>
-          
+        <div className="
+                grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6 rounded-3xl w-full max-w-7xl mt-12 bg-gray-300 mx-auto p-4">
+                {/* Sidebar hidden on mobile */}
+                <Sidebar className="hidden md:flex" />
+
+                {/* Main takes remaining space */}
+                <Main />
         </div>
+          
         
         </>
     )
